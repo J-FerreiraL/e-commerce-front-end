@@ -1,0 +1,16 @@
+.navigation {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .navigation a:hover {
+    color: #C92071;
+    border-bottom: 2px solid #C92071;
+  }
+  

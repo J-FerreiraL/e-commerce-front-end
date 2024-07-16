@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .store-name {
+    margin-left: 10px;
+    font-size: 1.5em;
+    color: #C92071;
+  }
+  
+  .auth-cart-container {
+    display: flex;
+    align-items: center;
+  }
+  

@@ -1,0 +1,23 @@
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .signup-button,
+  .login-button {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .login-button {
+    background-color: #C92071;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .login-button:hover {
+    background-color: #991956;
+  }
+  
