@@ -1,5 +1,6 @@
 .home-container {
   font-family: Arial, sans-serif;
+  position: relative; /* Necessário para posicionamento dos elementos decorativos */
 }
 
 .header {
@@ -82,17 +83,19 @@
 
 .promo-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Move a imagem do tênis para a esquerda */
   align-items: center;
   padding: 40px;
   background-color: #f5f5f5;
   border-radius: 10px;
   margin-top: 20px;
+  position: relative; /* Necessário para posicionamento dos elementos decorativos */
 }
 
 .promo-text {
   max-width: 50%;
-  text-align: left; /* Alinhar texto à esquerda */
+  text-align: left;
+  position: relative;
 }
 
 .promo-text h2 {
@@ -104,11 +107,18 @@
   font-size: 48px;
   font-weight: bold;
   color: #333;
+  display: inline-block;
 }
 
-.promo-text p {
+.fire-icon {
+  font-size: 48px;
+  margin-left: 10px;
+}
+
+.promo-description {
   color: #888;
   margin: 20px 0;
+  font-size: 20px; /* Aumenta o tamanho do texto */
 }
 
 .promo-text button {
@@ -126,10 +136,112 @@
 }
 
 .promo-image {
-  margin-left: 40px;
+  margin-left: -2000px; /* Ajuste este valor conforme necessário */
 }
 
 .promo-image img {
-  max-width: 100%;
+  max-width: 60%; /* Diminui a imagem do tênis */
   border-radius: 10px;
+}
+
+/* Estilo para pontos de navegação */
+.promo-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 10px;
+  margin-top: 10px; /* Subir os pontos de navegação */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #d3d3d3; /* Cor de fundo dos pontos inativos */
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.active {
+  background-color: #c2185b; /* Cor de fundo do ponto ativo */
+}
+
+/* Estilos para a seção de coleções em destaque */
+.highlighted-collections {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.highlighted-collections h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.collections {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.collection-item {
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  position: relative; /* Necessário para posicionamento dos elementos internos */
+}
+
+/* Estilo para o texto de desconto */
+.collection-item .discount {
+  background-color: #d0ec7c; /* Cor de fundo do texto de desconto */
+  color: #000; /* Cor do texto de desconto */
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: inline-block;
+  position: absolute; /* Posição absoluta para posicionamento */
+  top: 25px; /* Distância do topo */
+  left: 20px; /* Distância da esquerda */
+}
+
+.collection-item h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Estilo para o botão de compra */
+.collection-item button {
+  background-color: #fff; /* Cor de fundo do botão */
+  color: #ff4081; /* Cor do texto do botão */
+  padding: 10px 20px;
+  border: 0px solid #ff4081; /* Borda do botão */
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  position: absolute; /* Posição absoluta para posicionamento */
+  bottom: 60px; /* Distância do fundo */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-150%); /* Ajusta para centralizar */
+}
+
+.collection-item button:hover {
+  background-color: #ff4081; /* Cor de fundo do botão ao passar o mouse */
+  color: #fff; /* Cor do texto do botão ao passar o mouse */
+}
+
+.collection-item img {
+  max-width: 100%; /* Largura máxima da imagem */
+  border-radius: 10px; /* Bordas arredondadas da imagem */
+  margin-bottom: 10px;
 }

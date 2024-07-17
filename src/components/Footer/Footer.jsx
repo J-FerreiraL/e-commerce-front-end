@@ -2,13 +2,16 @@
 import React from 'react';
 import { Facebook, Instagram, Twitter } from '@mui/icons-material';
 import './Footer.css';
+import logo from '../../assets/logo.footer.svg';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-column">
-          <h3>Digital Store</h3>
+          <div className="logo-footer">  {/* Corrigido: className="logo-footer" */}
+            <img src={logo} alt='Digital Store' />  {/* Corrigido: src={logo} */}
+          </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
           <div className="social-icons">
             <a href="#"><Facebook /></a>
